@@ -8,6 +8,10 @@ import (
 	"time"
 )
 
+/* Usage:
+   go run 1_spiking_fuzzing.go <IP Address> <Port>
+*/
+
 func main() {
 	ip := os.Args[1]
 	port := os.Args[2]
