@@ -10,7 +10,7 @@ import (
 )
 
 /* Usage:
-   go run 1_spiking_fuzzing.go <IP Address> <Port>
+   go run 1_spiking_fuzzing.go <IP Address> <Port
 */
 
 func main() {
